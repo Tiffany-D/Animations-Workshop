@@ -1,15 +1,15 @@
-.number__1 {
+body .number__1 {
   width: 20rem;
   height: 20rem;
   border: 1px solid black;
   border-radius: 8px;
 }
 
-.number__1 h3 {
+body .number__1 h3 {
   text-align: center;
 }
 
-.number__1 img {
+body .number__1 img {
   margin: 10rem;
   width: 3rem;
   height: 3rem;
@@ -26,6 +26,14 @@
     -webkit-transform: translate(-50%, -150%) scale(1, 1);
             transform: translate(-50%, -150%) scale(1, 1);
   }
+  55% {
+    -webkit-transform: translate(-50%, -150%) rotate(180deg);
+            transform: translate(-50%, -150%) rotate(180deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -150%) rotate(200deg);
+            transform: translate(-50%, -150%) rotate(200deg);
+  }
   100% {
     -webkit-transform: translate(-50%, -50%) scale(1.25, 0.75);
             transform: translate(-50%, -50%) scale(1.25, 0.75);
@@ -41,9 +49,58 @@
     -webkit-transform: translate(-50%, -150%) scale(1, 1);
             transform: translate(-50%, -150%) scale(1, 1);
   }
+  55% {
+    -webkit-transform: translate(-50%, -150%) rotate(180deg);
+            transform: translate(-50%, -150%) rotate(180deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -150%) rotate(200deg);
+            transform: translate(-50%, -150%) rotate(200deg);
+  }
   100% {
     -webkit-transform: translate(-50%, -50%) scale(1.25, 0.75);
             transform: translate(-50%, -50%) scale(1.25, 0.75);
   }
+}
+
+body .number__2 {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+body .number__2 .title {
+  height: 30px;
+}
+
+body .number__2 .title h3 {
+  text-align: center;
+}
+
+body .number__2 .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .number__2 .cols .col-1 {
+  background-color: blueviolet;
+  width: 25%;
+}
+
+body .number__2 .cols .col-2 {
+  background-color: palevioletred;
+  width: 25%;
+}
+
+body .number__2 .cols .col-3 {
+  background-color: blueviolet;
+  width: 25%;
+}
+
+body .number__2 .cols .col-4 {
+  background-color: palevioletred;
+  width: 25%;
 }
 /*# sourceMappingURL=style.css.map */

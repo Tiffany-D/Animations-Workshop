@@ -103,4 +103,15 @@ body .number__2 .cols .col-4 {
   background-color: palevioletred;
   width: 25%;
 }
+
+body .number__3 {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+body .number__3 h3 {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

@@ -27,7 +27,6 @@ body .number__1 .box {
   margin-top: 6rem;
   margin-left: 8rem;
   background-color: white;
-  position: relative;
 }
 
 body .number__1 .up {
@@ -56,50 +55,6 @@ body .number__1 .rotate {
           transform-origin: 50% 50%;
   -webkit-animation: rotate 1.6s linear infinite both;
           animation: rotate 1.6s linear infinite both;
-}
-
-body .number__1 .shadow {
-  position: absolute;
-  z-index: -1;
-  margin-left: 7rem;
-  width: 100px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.2);
-  -webkit-animation: shadow 1.6s linear infinite both;
-          animation: shadow 1.6s linear infinite both;
-}
-
-@-webkit-keyframes shadow {
-  0% {
-    -webkit-transform: scale(0.5, 0.5) rotateY(180deg);
-            transform: scale(0.5, 0.5) rotateY(180deg);
-  }
-  20%, 80% {
-    -webkit-transform: scale(1.2, 1.2) rotateY(180deg);
-            transform: scale(1.2, 1.2) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: scale(0.5, 0.5) rotateY(180deg);
-            transform: scale(0.5, 0.5) rotateY(180deg);
-  }
-}
-
-@keyframes shadow {
-  0% {
-    -webkit-transform: scale(0.5, 0.5) rotateY(180deg);
-            transform: scale(0.5, 0.5) rotateY(180deg);
-  }
-  20%, 80% {
-    -webkit-transform: scale(1.2, 1.2) rotateY(180deg);
-            transform: scale(1.2, 1.2) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: scale(0.5, 0.5) rotateY(180deg);
-            transform: scale(0.5, 0.5) rotateY(180deg);
-  }
 }
 
 @-webkit-keyframes rotate {

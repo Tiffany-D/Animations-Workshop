@@ -6,6 +6,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 2rem;
 }
 
@@ -274,6 +276,7 @@ body .number__3 h3 {
 }
 
 body .number__3 .line {
+  margin-top: 5rem;
   fill: none;
   stroke: #fff;
   stroke-width: 3px;
@@ -312,6 +315,17 @@ body .number__4 {
 }
 
 body .number__4 h3 {
+  text-align: center;
+}
+
+body .number__5 {
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__5 h3 {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

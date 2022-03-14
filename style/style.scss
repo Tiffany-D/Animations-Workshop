@@ -4,6 +4,7 @@ body{
     background-image: url("../backg.png");
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 2rem;
 
     .number__1{
@@ -172,6 +173,7 @@ body{
             color: white;
         }
         .line {
+            margin-top: 5rem;
             fill: none;
             stroke: #fff;
             stroke-width: 3px;
@@ -197,6 +199,21 @@ body{
     // Animation 4
 
     .number__4{
+        width: 20rem;
+        height: 20rem;
+        background-color: white;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+        }
+       
+    
+    }
+
+
+    // Animation 5
+
+    .number__5{
         width: 20rem;
         height: 20rem;
         background-color: white;

@@ -84,43 +84,78 @@ body{
         
     }
 
+    // Animation 2
+
     .number__2{
         width: 20rem;
         height: 20rem;
         border: 1px solid black;
         background-color: white;
         border-radius: 8px;
-        
         .title{
             height: 30px;
             h3{
             text-align: center;
         } 
-        }
-       .cols{
-        display: flex;
-       
-        .col-1{
-        background-color: blueviolet;
-        width: 25%;
+    }
         
+        .container {
+            display: flex;
+            width: 100%;
+            height: 83%;
+            
+            .col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                cursor: pointer;
+                transition: all 0.5s;
+                font-weight: 700;
+                
+                .text {
+                    display: none;
+                    font-size: 10px;
+                }
+                
+            }
+            .col-1, .col-3 {
+                background-color: #FFB2A6;
+            }
+            .col-2, .col-4 {
+                background-color: #FFE162;
+            }
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4{
+                
+                &:hover{
+                    flex-grow: 4;
+                }
+                &:hover .text {
+                    display: inline-block;
+                    animation: text-scale .5s ease-in-out forwards;
+                    @keyframes text-scale {
+                        0% {
+                            display: none;
+                            opacity: 0;
+                            transform: scale(1);
+                        }
+                        
+                        100% {
+                            opacity: 1;
+                            transform: scale(2.5);
+                        }
+                        
+                    }
+                }
+            }
+            
         }
-        .col-2{
-            background-color: palevioletred;
-            width: 25%;
-    
-        }
-        .col-3{
-            background-color: blueviolet;
-            width: 25%;
-    
-        }
-        .col-4{
-            background-color: palevioletred;
-            width: 25%;
-    
-        }
-       }
+        
+       
+       
         
     }
 
@@ -128,13 +163,89 @@ body{
         width: 20rem;
         height: 20rem;
         border: 1px solid black;
-        background-color: white;
+        background-color: #EAB0D9;
         border-radius: 8px;
 
             h3{
             text-align: center;
+            color: white;
+        }
+        .container_ball{
+            width: 100%;
+            height: 50%;
+            animation: spinning 8s linear infinite;
+            @keyframes spinning {
+
+                0% {transform:rotate(0deg)}
+                100%{transform:rotate(360deg)}
+            }
+
+             .ball{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            margin-top: 6rem;
+            margin-left: 7rem;
+
+        }
+        .mini_ball_1{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_2{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_3{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_4{
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_5{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_6{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_7{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_8{
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .mini_ball_9{
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: white;
         }
 
+        }
+       
     }
 }
 

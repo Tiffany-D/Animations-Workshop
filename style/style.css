@@ -310,12 +310,93 @@ body .number__3 .line {
 body .number__4 {
   width: 20rem;
   height: 20rem;
-  background-color: white;
+  background-color: #F999B7;
   border-radius: 8px;
 }
 
 body .number__4 h3 {
   text-align: center;
+}
+
+body .number__4 .center {
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+body .number__4 .center .frame {
+  width: 225px;
+  height: 2px;
+  background: #fff;
+  margin: 15px 0;
+  -webkit-animation: frame .6s ease-out both;
+          animation: frame .6s ease-out both;
+}
+
+body .number__4 .center .text {
+  stroke: white;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 0;
+}
+
+body .number__4 .center .text .a1 {
+  fill: #fff;
+  stroke-width: 6;
+  -webkit-animation: fill 1.2s ease-in-out both;
+          animation: fill 1.2s ease-in-out both;
+}
+
+body .number__4 .center .text .a2 {
+  fill: none;
+  stroke-width: 12;
+  -webkit-animation: fill 1.7s ease-in-out both;
+          animation: fill 1.7s ease-in-out both;
+}
+
+body .number__4 .center .text .a3 {
+  fill: none;
+  stroke-width: 18;
+  -webkit-animation: fill 2.2s ease-in-out both;
+          animation: fill 2.2s ease-in-out both;
+}
+
+@-webkit-keyframes fill {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 270;
+  }
+}
+
+@keyframes fill {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 270;
+  }
+}
+
+@-webkit-keyframes frame {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes frame {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 body .number__5 {

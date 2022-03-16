@@ -3,11 +3,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   margin: 2rem;
 }
 
@@ -538,5 +540,65 @@ body .number__5 .box:hover h2 {
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
   opacity: 0;
+}
+
+body .number__6 {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__6 h3 {
+  text-align: center;
+}
+
+body .number__7 {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__7 h3 {
+  text-align: center;
+}
+
+body .number__8 {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__8 h3 {
+  text-align: center;
+}
+
+body .number__9 {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__9 h3 {
+  text-align: center;
+}
+
+body .number__10 {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+body .number__10 h3 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

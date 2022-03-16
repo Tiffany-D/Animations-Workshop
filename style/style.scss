@@ -3,8 +3,9 @@
 body{
     background-image: url("../backg.png");
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    // flex-wrap:wrap;
+    flex-flow: row wrap;
     margin: 2rem;
 
     .number__1{
@@ -372,6 +373,66 @@ body{
           }
           
     }
+
+    // Animation 6
+    .number__6{
+        width: 20rem;
+        height: 20rem;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+        }
+    }
+
+    // Animation 7
+    .number__7{
+        width: 20rem;
+        height: 20rem;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+        
+    }
+}
+
+    // Animation 8
+    .number__8{
+        width: 20rem;
+        height: 20rem;
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+        }
+    }
+    .number__9{
+        width: 20rem;
+        height: 20rem;
+        margin-top: 2rem;
+      background-color: white;
+        border-radius: 8px;
+        h3{
+            text-align: center;
+        
+    }
+}
+.number__10{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+  background-color: white;
+    border-radius: 8px;
+    h3{
+        text-align: center;
+    
+}
+}
+  
 }
 
     

@@ -547,8 +547,9 @@ body .number__6 {
   width: 20rem;
   height: 20rem;
   margin-top: 2rem;
-  background-color: white;
+  background-color: #9ADCFF;
   border-radius: 8px;
+  color: #fff;
 }
 
 body .number__6 h3 {

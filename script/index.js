@@ -5,6 +5,7 @@ const sunPath = "M58 29C58 45.0163 45.0163 58 29 58C12.9837 58 0 45.0163 0 29C0 
 
 const lightMode = document.querySelector('#light_mode');
 
+
 let toggle = false;
 
 lightMode.addEventListener('click', () =>{
@@ -16,8 +17,31 @@ lightMode.addEventListener('click', () =>{
 // Animate from sun to moon
 	timeline.add({
 		targets:".sun",
-		d: [{value: moonPath}]
-	});
+		d: [{value: toggle ? sunPath : moonPath}]
+	})
+
+	.add({
+		targets: ".number__6", 
+		backgroundColor: toggle ? "rgb(94, 230, 235)" : "rgb(24, 10, 10)"
+	}, '-=700');
+	// Sun goes back when clicking on the moon
+	if(!toggle){
+		toggle:false;
+	}else{
+		toggle:true;
+	}
+
+	//Toggle text Light to Dark
+	function toggleText() {
+		let text =document.querySelector('#text');
+		if (text.innerHTML === "Light Mode") {
+		  text.innerHTML = "Dark Mode";
+		} else {
+		  text.innerHTML = "Light Mode";
+		}
+	  }
+	  toggleText();
+
 });
 
 

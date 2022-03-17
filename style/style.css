@@ -555,6 +555,15 @@ body .number__6 h3 {
   text-align: center;
 }
 
+body .number__6 #light_mode {
+  margin: 5rem 0 0 8rem;
+  cursor: pointer;
+}
+
+body .number__6 p {
+  text-align: center;
+}
+
 body .number__7 {
   width: 20rem;
   height: 20rem;

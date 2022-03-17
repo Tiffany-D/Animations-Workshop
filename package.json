@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "animejs": "^3.2.1",
     "sass": "^1.49.9"
   }
 }

@@ -4,11 +4,13 @@ const moonPath = "M19 29C19 45.0163 45.0163 58 29 58C12.9837 58 0 45.0163 0 29C0
 const sunPath = "M58 29C58 45.0163 45.0163 58 29 58C12.9837 58 0 45.0163 0 29C0 12.9837 12.9837 0 29 0C45.0163 0 58 12.9837 58 29Z";
 
 const lightMode = document.querySelector('#light_mode');
+const section = document.querySelector('.number__6');
+let lightColorMode = "rgb(94, 230, 235)";
+let darkColorMode ="rgb(24, 10, 10)";
 
+let toggle;
 
-let toggle = false;
-
-lightMode.addEventListener('click', () =>{
+section.addEventListener('click', () =>{
 // set up timeline
 	const timeline = anime.timeline({
 		duration: 750,
@@ -22,14 +24,26 @@ lightMode.addEventListener('click', () =>{
 
 	.add({
 		targets: ".number__6", 
-		backgroundColor: toggle ? "rgb(94, 230, 235)" : "rgb(24, 10, 10)"
+		backgroundColor: toggle ? lightColorMode : darkColorMode
 	}, '-=700');
 	// Sun goes back when clicking on the moon
-	if(!toggle){
+		if(toggle===true){
 		toggle:false;
 	}else{
 		toggle:true;
+		
 	}
+	
+
+	// function toggleColorMode(){
+	// 	let colorMode = document.querySelector(".number__6");
+	// 	if(colorMode !== lightColorMode){
+	// 		colorMode.backgroundColor= darkColorMode;
+	// 	}else{
+	// 		colorMode.backgroundColor =lightColorMode;
+	// 	}
+	// }
+	// toggleColorMode();
 
 	//Toggle text Light to Dark
 	function toggleText() {

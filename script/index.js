@@ -7,24 +7,40 @@ const lightMode = document.querySelector('#light_mode');
 const section = document.querySelector('.number__6');
 let lightColorMode = "rgb(94, 230, 235)";
 let darkColorMode ="rgb(24, 10, 10)";
+// let text =document.querySelector('#text');
 
 let toggle= false;
-	
+
+		
 
 section.addEventListener('click', () =>{
 
 // Sun goes back when clicking on the moon
 		if(!toggle){
-		toggle:false;
-	}else{
 		toggle:true;
+	}else{
+		toggle:false;
 		
-	}	
+	}
+
+
+
+	// function toggleBgColor(){
+		
+	// 	if(section.style.backgroundColor== lightColorMode){
+	// 		section.style.backgroundColor= darkColorMode;
+	// 	}else{
+	// 		section.style.backgroundColor= lightColorMode;
+			
+	// 	}
+	// }
+	
 
 // set up timeline
 	const timeline = anime.timeline({
 		duration: 750,
-		easing: "easeOutExpo"
+		easing: "easeOutExpo",
+		rotate: 500
 	});
 // Animate from sun to moon
 	timeline.add({
@@ -35,9 +51,8 @@ section.addEventListener('click', () =>{
 	.add({
 		targets: ".number__6", 
 		backgroundColor: toggle ? lightColorMode : darkColorMode
-	}, '-=700');
+	}, "-=700")
 
-	
 
 	// function toggleColorMode(){
 	// 	let colorMode = document.querySelector(".number__6");
@@ -52,14 +67,14 @@ section.addEventListener('click', () =>{
 	//Toggle text Light to Dark
 	function toggleText() {
 		let text =document.querySelector('#text');
-		if (text.innerHTML === "Light Mode") {
+		if (text.innerHTML == "Light Mode") {
 		  text.innerHTML = "Dark Mode";
 		} else {
 		  text.innerHTML = "Light Mode";
 		}
 	  }
 	  toggleText();
-
+	// toggleBgColor();
 });
 
 
@@ -97,6 +112,25 @@ document.addEventListener("mouseout", ()=>{
 });
 
 
+
+
+// Typrewritting text animation
+
+var i= 0;
+var textToType = "Coucou c'est Tiff 🌞";
+var speed = 100; 
+// speed in milliseconds
+
+
+// Typrewriter function
+
+function typeWriter(){
+	if (i < textToType.length){
+		document.getElementById("typewriter").innerHTML+= textToType.charAt(i);
+		i++;
+		setTimeout(typeWriter, speed);
+	}
+}
 
 
 

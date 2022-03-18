@@ -450,34 +450,30 @@ body{
         width: 20rem;
         height: 20rem;
         margin-top: 2rem;
-        background-color: white;
+        background-color: #FFADF0;
         border-radius: 8px;
         h3{
             text-align: center;
         }
+        p{
+            margin-top: 6rem;
+            margin-left: 5rem;
+            font-size: 20px;
+            color: #fff;
+        }
+        button{
+            font-size: 15px;
+            margin-left: 5.5rem;
+            margin-top: 5rem;
+            padding: 1rem;
+            border: 2px solid #C1F8CF;
+            border-radius: 10px;
+            background: transparent;
+            color: #FDEBF7;
+            cursor: pointer;
+        }
     }
-    .number__9{
-        width: 20rem;
-        height: 20rem;
-        margin-top: 2rem;
-      background-color: white;
-        border-radius: 8px;
-        h3{
-            text-align: center;
-        
-    }
-}
-.number__10{
-    width: 20rem;
-    height: 20rem;
-    margin-top: 2rem;
-  background-color: white;
-    border-radius: 8px;
-    h3{
-        text-align: center;
-    
-}
-}
+ 
   
 }
 

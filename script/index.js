@@ -8,9 +8,19 @@ const section = document.querySelector('.number__6');
 let lightColorMode = "rgb(94, 230, 235)";
 let darkColorMode ="rgb(24, 10, 10)";
 
-let toggle;
+let toggle= false;
+	
 
 section.addEventListener('click', () =>{
+
+// Sun goes back when clicking on the moon
+		if(!toggle){
+		toggle:false;
+	}else{
+		toggle:true;
+		
+	}	
+
 // set up timeline
 	const timeline = anime.timeline({
 		duration: 750,
@@ -26,13 +36,7 @@ section.addEventListener('click', () =>{
 		targets: ".number__6", 
 		backgroundColor: toggle ? lightColorMode : darkColorMode
 	}, '-=700');
-	// Sun goes back when clicking on the moon
-		if(toggle===true){
-		toggle:false;
-	}else{
-		toggle:true;
-		
-	}
+
 	
 
 	// function toggleColorMode(){
@@ -57,5 +61,42 @@ section.addEventListener('click', () =>{
 	  toggleText();
 
 });
+
+
+
+
+
+// Cursor animation
+
+const cursor = document.querySelector('.cursor');
+var timeout;
+
+// cursor follows on mouse move
+document.addEventListener("mousemove", (e)=>{
+let x = e.pageX;
+let y = e.pageY;
+
+cursor.style.top = y + "px";
+cursor.style.left = x + "px";
+cursor.style.display = "block";
+
+// Effect when mouse stopped 
+
+function mouseStopped(){
+	cursor.style.display="none";
+}
+
+clearTimeout(timeout);
+timeout =setTimeout(mouseStopped, 1000);
+});
+
+// Effect when mouseout
+document.addEventListener("mouseout", ()=>{
+
+	cursor.style.display="none";
+});
+
+
+
 
 

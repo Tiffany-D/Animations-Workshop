@@ -124,6 +124,8 @@ var speed = 100;
 
 // Typrewriter function
 
+document.addEventListener("click", ()=>{
+
 function typeWriter(){
 	if (i < textToType.length){
 		document.getElementById("typewriter").innerHTML+= textToType.charAt(i);
@@ -131,6 +133,9 @@ function typeWriter(){
 		setTimeout(typeWriter, speed);
 	}
 }
+typeWriter();
+});
+
 
 
 

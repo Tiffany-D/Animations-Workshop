@@ -1,0 +1,236 @@
+@font-face{
+    font-family: 'calvous';
+    src: url('./assets/fonts/Calvous\ DEMO.otf');
+}
+
+@font-face{
+    font-family: 'ubuntu-reg';
+    src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-med';
+    src: url('./assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-light';
+    src: url('./assets/fonts/Ubuntu-Light.ttf');
+}
+@font-face{
+    font-family: 'ubuntu-bold';
+    src: url('./assets/fonts/Ubuntu-Bold.ttf');
+}
+
+header{
+    .navbar{
+        width: 100%;
+        background-image:url("./assets/images/team.png");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba($color: #283133, $alpha: 0.7);
+        @media screen and (min-width:1024px){
+            height: 100vh;         
+            }
+
+    .top_navbar{
+        @media screen and (min-width:1024px){
+            background-color: rgba($color: #283133, $alpha: 0.7);
+            padding-bottom: 0.2rem;
+        }
+        .top_title{
+            width: 180px;
+            margin: 0 auto;
+            @media screen and (min-width:1024px){
+                margin: 0 5rem;  
+                display: flex;         
+                }
+        
+        .logo_ctn{
+            width: 50px;
+            margin: 0 auto;
+         .ghosts_logo{
+            margin-top: 1rem;
+            width: 100%;
+            
+        } 
+            }
+            
+        h2{
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: 'calvous';
+            font-size: 15px;
+            text-align: center;
+            margin-top: 0.5rem;
+            @media screen and (min-width:1024px){
+                margin-top: 2rem;        
+                }
+        }
+        }
+
+        .links_header{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem;
+            @media screen and (min-width:1024px){
+            display: flex;    
+            justify-content: flex-end; 
+            margin-top: -3rem; 
+            margin-right: 5rem;          
+            }
+
+            li{
+                padding: 0.3rem;
+
+                  a{
+                text-decoration: none;
+                color: #ffffff;
+                font-family: 'ubuntu-light';
+                
+            }
+            .pres{
+                color:#ceae60;
+                font-family: 'ubuntu-reg';
+                border: 1px solid #ceae60;
+                padding: 0.2rem;
+            } 
+            img{
+                border: 1px solid #ceae60;
+                border-radius: 50%;
+                padding: 0.6rem;
+                width: 28px;
+            }
+            }
+
+         
+        }
+       
+    }
+
+    .main_title{
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        width: 180px;
+        @media screen and (min-width:1024px){
+            margin-top: 10rem;        
+            }
+        .logo_ctn{
+            width: 100px;
+            margin: 0 auto;
+        .centered_logo{
+            width: 100%;
+
+        }
+    }
+    h1{
+        color: #ffffff;
+        font-family: 'calvous';
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    h5{
+        color: #ffffff;
+        font-family: 'ubuntu-light';
+        font-size: 10px;
+        text-align: center;
+        background-color: #283133;
+        padding: 0.5rem;
+        margin: 0.5rem 0 0 0;
+        span{
+            color: #ceae60;
+            
+        }
+    }
+    }
+   
+    }
+}
+
+.airsoft{
+    background-image: url('./assets/images/overlay2.png');
+    background-size: cover;
+    background-position: 95%;
+    background-blend-mode: multiply;
+    @media screen and (min-width:1024px){
+        display: flex;    
+        justify-content: center;  
+        align-items: center; 
+        }
+   
+    .airsoft_pic{
+        width:100%;
+        
+    }
+.airsoft_title{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    img{
+        width: 2rem;
+    }
+    h3{
+        color: #ffffff;
+        font-family: 'calvous';
+    }
+}
+
+.par{
+    color: #ffffff;
+    font-family: 'ubuntu-light';
+    font-size: 15px;
+    padding: 1rem;
+    margin-left: 1rem;
+p{
+    padding: 0.5rem;
+    span{
+        color: #ceae60;
+    }
+}
+
+
+}
+}
+
+footer{
+    background-color: #283133;
+    width: 100%;
+    .logo_sub_title{
+        padding-top: 1rem;
+        margin: 0 auto;
+        width: 180px;
+        .logo_ctn{
+            width: 50px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+            
+        }
+        h4{
+                color: #ffffff;
+                font-family: 'calvous';
+                text-align: center;
+                padding-top: 0.5rem;
+            }
+    }
+
+    .bottom_links{
+        text-align: center;
+        padding: 2rem;
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'ubuntu-light';
+            font-size: 13px;
+            span{
+            padding: 0.5rem 0.5rem 0 0.5rem;
+           
+
+            }
+        }
+        .fb_links{ 
+            color: #ceae60;
+        }
+    }
+}

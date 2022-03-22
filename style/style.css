@@ -33,29 +33,21 @@ body .number__1 .box {
 }
 
 body .number__1 .up {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
   -webkit-animation: up 1.6s ease-in-out infinite both;
           animation: up 1.6s ease-in-out infinite both;
 }
 
 body .number__1 .down {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
   -webkit-animation: down 1.6s ease-in infinite both;
           animation: down 1.6s ease-in infinite both;
 }
 
 body .number__1 .squeeze {
-  -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
   -webkit-animation: squeeze 1.6s ease-in-out infinite both;
           animation: squeeze 1.6s ease-in-out infinite both;
 }
 
 body .number__1 .rotate {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
   -webkit-animation: rotate 1.6s linear infinite both;
           animation: rotate 1.6s linear infinite both;
 }
@@ -340,21 +332,21 @@ body .number__4 .center .text {
   stroke-dashoffset: 0;
 }
 
-body .number__4 .center .text .a1 {
+body .number__4 .center .text .p1 {
   fill: #fff;
   stroke-width: 6;
   -webkit-animation: fill 1.2s ease-in-out both;
           animation: fill 1.2s ease-in-out both;
 }
 
-body .number__4 .center .text .a2 {
+body .number__4 .center .text .p2 {
   fill: none;
   stroke-width: 12;
   -webkit-animation: fill 1.7s ease-in-out both;
           animation: fill 1.7s ease-in-out both;
 }
 
-body .number__4 .center .text .a3 {
+body .number__4 .center .text .p3 {
   fill: none;
   stroke-width: 18;
   -webkit-animation: fill 2.2s ease-in-out both;
@@ -416,8 +408,6 @@ body .number__5 h3 {
 body .number__5 .box {
   width: 320px;
   height: 260px;
-  -webkit-box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   background: #222 url(https://100dayscss.com/codepen/slice-image-1.jpg) center;
   color: #fff;
   display: -webkit-box;
@@ -429,10 +419,6 @@ body .number__5 .box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
   border-radius: 2px;
   -ms-flex-wrap: wrap;
@@ -443,7 +429,6 @@ body .number__5 .box {
 
 body .number__5 .box h1,
 body .number__5 .box h2 {
-  z-index: 2;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
@@ -474,7 +459,6 @@ body .number__5 .box .bg .s {
       -ms-flex: 1;
           flex: 1;
   background: #222 url(https://100dayscss.com/codepen/slice-image-2.jpg);
-  background-position-y: center;
   background-size: cover;
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
@@ -578,20 +562,15 @@ body .number__7 h3 {
 }
 
 body .number__7 .cursor {
-  z-index: 999;
+  z-index: 1;
   position: fixed;
   background: #2696E8;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   pointer-events: none;
-  -webkit-box-shadow: 0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
-          box-shadow: 0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
   -webkit-animation: colors 5s infinite;
           animation: colors 5s infinite;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: none;
 }
 
 @-webkit-keyframes colors {

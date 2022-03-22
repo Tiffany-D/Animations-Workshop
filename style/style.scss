@@ -4,7 +4,6 @@ body{
     background-image: url("../backg.png");
     display: flex;
     justify-content: space-between;
-    // flex-wrap:wrap;
     flex-flow: row wrap;
     margin: 2rem;
 
@@ -25,21 +24,17 @@ body{
             background-color: white;
         }
         .up {
-            transform-origin: 50% 50%;
             animation: up 1.6s ease-in-out infinite both;
         }
         .down {
-            transform-origin: 50% 50%;
             animation: down 1.6s ease-in infinite both;
         }
         
         .squeeze {
-            transform-origin: 50% 100%;
             animation: squeeze 1.6s ease-in-out infinite both;
         }
         
         .rotate {
-            transform-origin: 50% 50%;
             animation: rotate 1.6s linear infinite both;
         }
         
@@ -224,19 +219,19 @@ body{
             stroke-dasharray: 270;
             stroke-dashoffset: 0;
             
-            .a1 {
+            .p1 {
                 fill: #fff;
                 stroke-width: 6;
                 animation: fill 1.2s ease-in-out both;
             }
             
-            .a2 {
+            .p2 {
                 fill: none;
                 stroke-width: 12;
                 animation: fill 1.7s ease-in-out both;
             }
             
-            .a3 {
+            .p3 {
                 fill: none;
                 stroke-width: 18;
                 animation: fill 2.2s ease-in-out both;
@@ -282,13 +277,11 @@ body{
         .box {
             width: 320px;
             height: 260px;
-            box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
             background: #222 url(https://100dayscss.com/codepen/slice-image-1.jpg) center;
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             position: relative;
             border-radius: 2px;
             flex-wrap: wrap;
@@ -297,8 +290,7 @@ body{
           
             h1,
             h2 {
-              z-index: 2;
-              transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
             }
             h1 {
               font-size: 50px;
@@ -317,7 +309,6 @@ body{
                 height: 100%;
                 flex: 1;
                 background: #222 url(https://100dayscss.com/codepen/slice-image-2.jpg);
-                background-position-y: center;
                 background-size: cover;
                 opacity: 0;
                 transition: all 1s ease-in-out;
@@ -409,19 +400,14 @@ body{
         
     }
     .cursor{
-        z-index: 999;
+        z-index: 1;
         position: fixed;
         background: #2696E8;
         width: 20px;
         height: 20px;
         border-radius: 50%;
         pointer-events: none;
-        box-shadow: 0 0 20px #2696E8,
-                    0 0 60px #2696E8,
-                    0 0 100px #2696E8;
         animation: colors 5s infinite;
-        transform: translate(-50%, -50%);
-        display: none;
       }
       
       @keyframes colors{

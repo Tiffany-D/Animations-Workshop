@@ -84,7 +84,7 @@ section.addEventListener('click', () =>{
 // Cursor animation
 
 const cursor = document.querySelector('.cursor');
-var timeout;
+let timeout;
 
 // cursor follows on mouse move
 document.addEventListener("mousemove", (e)=>{
@@ -105,20 +105,15 @@ clearTimeout(timeout);
 timeout =setTimeout(mouseStopped, 1000);
 });
 
-// Effect when mouseout
-document.addEventListener("mouseout", ()=>{
-
-	cursor.style.display="none";
-});
 
 
 
 
 // Typrewritting text animation
 
-var i= 0;
-var textToType = "Coucou c'est Tiff 🌞";
-var speed = 100; 
+let i= 0;
+let textToType = "Coucou c'est Tiff 🌞";
+let speed = 100; 
 // speed in milliseconds
 
 

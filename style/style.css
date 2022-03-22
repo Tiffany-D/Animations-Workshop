@@ -33,23 +33,23 @@ body .number__1 .box {
 }
 
 body .number__1 .up {
-  -webkit-animation: up 1.6s ease-in-out infinite both;
-          animation: up 1.6s ease-in-out infinite both;
+  -webkit-animation: up 1.6s ease-in-out infinite;
+          animation: up 1.6s ease-in-out infinite;
 }
 
 body .number__1 .down {
-  -webkit-animation: down 1.6s ease-in infinite both;
-          animation: down 1.6s ease-in infinite both;
+  -webkit-animation: down 1.6s ease-in infinite;
+          animation: down 1.6s ease-in infinite;
 }
 
 body .number__1 .squeeze {
-  -webkit-animation: squeeze 1.6s ease-in-out infinite both;
-          animation: squeeze 1.6s ease-in-out infinite both;
+  -webkit-animation: squeeze 1.6s ease-in-out infinite;
+          animation: squeeze 1.6s ease-in-out infinite;
 }
 
 body .number__1 .rotate {
-  -webkit-animation: rotate 1.6s linear infinite both;
-          animation: rotate 1.6s linear infinite both;
+  -webkit-animation: rotate 1.6s linear infinite;
+          animation: rotate 1.6s linear infinite;
 }
 
 @-webkit-keyframes rotate {

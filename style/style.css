@@ -340,14 +340,14 @@ body .number__4 .center .text .p1 {
 }
 
 body .number__4 .center .text .p2 {
-  fill: none;
+  fill: #fff;
   stroke-width: 12;
   -webkit-animation: fill 1.7s ease-in-out both;
           animation: fill 1.7s ease-in-out both;
 }
 
 body .number__4 .center .text .p3 {
-  fill: none;
+  fill: #fff;
   stroke-width: 18;
   -webkit-animation: fill 2.2s ease-in-out both;
           animation: fill 2.2s ease-in-out both;

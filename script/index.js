@@ -17,9 +17,9 @@ section.addEventListener('click', () =>{
 
 // Sun goes back when clicking on the moon
 		if(!toggle){
-		toggle:true;
+		toggle=true;
 	}else{
-		toggle:false;
+		toggle=false;
 		
 	}
 
@@ -45,12 +45,12 @@ section.addEventListener('click', () =>{
 // Animate from sun to moon
 	timeline.add({
 		targets:".sun",
-		d: [{value: toggle ? sunPath : moonPath}]
+		d: [{value: toggle ? moonPath : sunPath}]
 	})
 
 	.add({
 		targets: ".number__6", 
-		backgroundColor: toggle ? lightColorMode : darkColorMode
+		backgroundColor: toggle ? darkColorMode : lightColorMode
 	}, "-=700")
 
 
@@ -88,8 +88,8 @@ let timeout;
 
 // cursor follows on mouse move
 document.addEventListener("mousemove", (e)=>{
-let x = e.pageX;
-let y = e.pageY;
+let x = e.clientX;
+let y = e.clientY;
 
 cursor.style.top = y + "px";
 cursor.style.left = x + "px";

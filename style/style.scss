@@ -134,12 +134,12 @@ body{
                 }
                 &:hover .text {
                     display: inline-block;
-                    animation: text-scale .5s ease-in-out forwards;
+                    animation: text-scale .5s ease-in-out both;
                     @keyframes text-scale {
                         0% {
                             display: none;
                             opacity: 0;
-                            transform: scale(1);
+                            // transform: scale(1);
                         }
                         
                         100% {
@@ -401,7 +401,7 @@ body{
         
     }
     .cursor{
-        z-index: 1;
+        // z-index: 1;
         position: fixed;
         background: #2696E8;
         width: 20px;
@@ -409,6 +409,7 @@ body{
         border-radius: 50%;
         pointer-events: none;
         animation: colors 5s infinite;
+        transform: translate(-50%, -50%);
       }
       
       @keyframes colors{
@@ -459,9 +460,9 @@ body{
             color: #FDEBF7;
             cursor: pointer;
         }
+ 
     }
  
-  
 }
 
     

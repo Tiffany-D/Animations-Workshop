@@ -322,8 +322,8 @@ body .number__4 .center .frame {
   height: 2px;
   background: #fff;
   margin: 15px 0;
-  -webkit-animation: frame .6s ease-out both;
-          animation: frame .6s ease-out both;
+  -webkit-animation: frame .6s ease-out;
+          animation: frame .6s ease-out;
 }
 
 body .number__4 .center .text {

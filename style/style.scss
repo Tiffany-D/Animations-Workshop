@@ -309,31 +309,31 @@ body{
               .s {
                 height: 100%;
                 flex: 1;
-                background: #222 url(https://100dayscss.com/codepen/slice-image-2.jpg);
+                background: url(https://100dayscss.com/codepen/slice-image-2.jpg);
                 background-size: cover;
                 opacity: 0;
                 transition: all 1s ease-in-out;
               }
               .s-2 {
-                background-position-x: 500px;
+                background-position: 500px;
               }
               .s-3 {
-                background-position-x: 250px;
+                background-position: 250px;
               }
               .s-4 {
-                background-position-x: 210px;
+                background-position: 210px;
               }
               .s-5 {
-                background-position-x: 170px;
+                background-position: 170px;
               }
               .s-6 {
-                background-position-x: 130px;
+                background-position: 130px;
               }
               .s-7 {
-                background-position-x: 90px;
+                background-position: 90px;
               }
               .s-8 {
-                background-position-x: 50px;
+                background-position: 50px;
               }
               .s-1,
               .s-3,
@@ -427,7 +427,7 @@ body{
         width: 50px;
         height: 50px;
         opacity: 0.2;
-        transform: translate(-30%, -30%);
+        // transform: translate(-30%, -30%);
         border-radius: 50%;
       }
 }

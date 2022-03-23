@@ -458,7 +458,7 @@ body .number__5 .box .bg .s {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #222 url(https://100dayscss.com/codepen/slice-image-2.jpg);
+  background: url(https://100dayscss.com/codepen/slice-image-2.jpg);
   background-size: cover;
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
@@ -466,31 +466,31 @@ body .number__5 .box .bg .s {
 }
 
 body .number__5 .box .bg .s-2 {
-  background-position-x: 500px;
+  background-position: 500px;
 }
 
 body .number__5 .box .bg .s-3 {
-  background-position-x: 250px;
+  background-position: 250px;
 }
 
 body .number__5 .box .bg .s-4 {
-  background-position-x: 210px;
+  background-position: 210px;
 }
 
 body .number__5 .box .bg .s-5 {
-  background-position-x: 170px;
+  background-position: 170px;
 }
 
 body .number__5 .box .bg .s-6 {
-  background-position-x: 130px;
+  background-position: 130px;
 }
 
 body .number__5 .box .bg .s-7 {
-  background-position-x: 90px;
+  background-position: 90px;
 }
 
 body .number__5 .box .bg .s-8 {
-  background-position-x: 50px;
+  background-position: 50px;
 }
 
 body .number__5 .box .bg .s-1,
@@ -602,8 +602,6 @@ body .number__7 .cursor:before {
   width: 50px;
   height: 50px;
   opacity: 0.2;
-  -webkit-transform: translate(-30%, -30%);
-          transform: translate(-30%, -30%);
   border-radius: 50%;
 }
 

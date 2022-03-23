@@ -568,7 +568,6 @@ body .number__7 .cursor {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  pointer-events: none;
   -webkit-animation: colors 5s infinite;
           animation: colors 5s infinite;
 }
